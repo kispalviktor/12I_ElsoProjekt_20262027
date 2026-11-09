@@ -1,5 +1,4 @@
-﻿
-using System;
+﻿using System;
 
 namespace SzallodaAlkalmazas
 {
@@ -14,9 +13,11 @@ namespace SzallodaAlkalmazas
         public string Status { get; private set; }
         public decimal TotalPrice { get; private set; }
 
+        // A teljes árat kívülről kapja meg (a CalculatePrice metódussal számoljuk ki),
+        // így fájlból betöltéskor a mentett ár marad meg.
         public Booking(int id, int guestId, int roomNumber,
             DateTime checkIn, DateTime checkOut, int guestCount,
-            string status, decimal pricePerNight)
+            string status, decimal totalPrice)
         {
             if (id <= 0 || guestId <= 0 || roomNumber <= 0)
                 throw new ArgumentException("Hibás azonosító.");
@@ -31,8 +32,8 @@ namespace SzallodaAlkalmazas
             if (string.IsNullOrWhiteSpace(status))
                 throw new ArgumentException("A foglalás állapota kötelező.");
 
-            if (pricePerNight <= 0)
-                throw new ArgumentException("Hibás szobaár.");
+            if (totalPrice <= 0)
+                throw new ArgumentException("Hibás teljes ár.");
 
             Id = id;
             GuestId = guestId;
@@ -41,11 +42,10 @@ namespace SzallodaAlkalmazas
             CheckOut = checkOut.Date;
             GuestCount = guestCount;
             Status = status;
-
-            TotalPrice = CalculatePrice(
-                CheckIn, CheckOut, pricePerNight);
+            TotalPrice = totalPrice;
         }
 
+        // Ár kiszámítása: éjszakák száma × éjszakánkénti ár
         public static decimal CalculatePrice(
             DateTime checkIn, DateTime checkOut, decimal pricePerNight)
         {
@@ -54,6 +54,18 @@ namespace SzallodaAlkalmazas
 
             int nights = (checkOut.Date - checkIn.Date).Days;
             return nights * pricePerNight;
+        }
+
+        public int GetNights()
+        {
+            return (CheckOut - CheckIn).Days;
+        }
+
+        // Két időszak akkor fedi egymást, ha az egyik a másik vége előtt kezdődik
+        // és a másik kezdete után ér véget. A távozás napján már jöhet az új vendég.
+        public bool OverlapsWith(DateTime start, DateTime end)
+        {
+            return start.Date < CheckOut && end.Date > CheckIn;
         }
 
         public override string ToString()
