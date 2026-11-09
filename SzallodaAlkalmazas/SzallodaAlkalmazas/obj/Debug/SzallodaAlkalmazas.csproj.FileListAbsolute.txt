@@ -1,0 +1,9 @@
+C:\Users\Gerike\Documents\GitHub\KV_GB_SzallodaAlkalmazas\SzallodaAlkalmazas\SzallodaAlkalmazas\obj\Debug\SzallodaAlkalmazas.csproj.AssemblyReference.cache
+C:\Users\Gerike\Documents\GitHub\KV_GB_SzallodaAlkalmazas\SzallodaAlkalmazas\SzallodaAlkalmazas\obj\Debug\SzallodaAlkalmazas.Properties.Resources.resources
+C:\Users\Gerike\Documents\GitHub\KV_GB_SzallodaAlkalmazas\SzallodaAlkalmazas\SzallodaAlkalmazas\obj\Debug\SzallodaAlkalmazas.csproj.GenerateResource.cache
+C:\Users\Gerike\Documents\GitHub\KV_GB_SzallodaAlkalmazas\SzallodaAlkalmazas\SzallodaAlkalmazas\obj\Debug\SzallodaAlkalmazas.csproj.CoreCompileInputs.cache
+C:\Users\Gerike\Documents\GitHub\KV_GB_SzallodaAlkalmazas\SzallodaAlkalmazas\SzallodaAlkalmazas\bin\Debug\SzallodaAlkalmazas.exe.config
+C:\Users\Gerike\Documents\GitHub\KV_GB_SzallodaAlkalmazas\SzallodaAlkalmazas\SzallodaAlkalmazas\bin\Debug\SzallodaAlkalmazas.exe
+C:\Users\Gerike\Documents\GitHub\KV_GB_SzallodaAlkalmazas\SzallodaAlkalmazas\SzallodaAlkalmazas\bin\Debug\SzallodaAlkalmazas.pdb
+C:\Users\Gerike\Documents\GitHub\KV_GB_SzallodaAlkalmazas\SzallodaAlkalmazas\SzallodaAlkalmazas\obj\Debug\SzallodaAlkalmazas.exe
+C:\Users\Gerike\Documents\GitHub\KV_GB_SzallodaAlkalmazas\SzallodaAlkalmazas\SzallodaAlkalmazas\obj\Debug\SzallodaAlkalmazas.pdb

@@ -1,0 +1,98 @@
+﻿RoomNumber;RoomType;Capacity;PricePerNight;Equipment;IsActive
+101;Egyágyas;1;20000;Televízió, Minibár, Zuhanyzó;True
+102;Egyágyas;1;20000;Televízió, Minibár, Zuhanyzó;True
+103;Egyágyas;1;22000;Televízió, Minibár, Klíma;True
+104;Egyágyas;1;22000;Televízió, Minibár, Klíma;True
+105;Egyágyas;1;25000;Televízió, Minibár, Klíma, Erkély;True
+106;Egyágyas;1;20000;Televízió, Zuhanyzó;True
+107;Egyágyas;1;20000;Televízió, Zuhanyzó;True
+108;Egyágyas;1;23000;Televízió, Minibár, Széf;True
+109;Egyágyas;1;23000;Televízió, Minibár, Széf;True
+110;Egyágyas;1;25000;Televízió, Minibár, Jacuzzi;True
+111;Kétágyas;2;32000;Televízió, Minibár, Klíma;True
+112;Kétágyas;2;32000;Televízió, Minibár, Klíma;True
+113;Kétágyas;2;35000;Televízió, Minibár, Erkély, Klíma;True
+114;Kétágyas;2;35000;Televízió, Minibár, Erkély, Klíma;True
+115;Kétágyas;2;38000;Televízió, Minibár, Jacuzzi, Klíma;True
+116;Kétágyas;2;30000;Televízió, Zuhanyzó;True
+117;Kétágyas;2;30000;Televízió, Zuhanyzó;True
+118;Kétágyas;2;33000;Televízió, Minibár, Széf;True
+119;Kétágyas;2;33000;Televízió, Minibár, Széf;True
+120;Kétágyas;2;36000;Televízió, Minibár, Panoráma ablak;True
+121;Kétágyas;2;32000;Televízió, Minibár, Klíma;True
+122;Kétágyas;2;32000;Televízió, Minibár, Klíma;True
+123;Kétágyas;2;35000;Televízió, Minibár, Erkély;True
+124;Kétágyas;2;35000;Televízió, Minibár, Erkély;True
+125;Kétágyas;2;38000;Televízió, Minibár, Jacuzzi;True
+126;Kétágyas;2;30000;Televízió, Zuhanyzó;True
+127;Kétágyas;2;30000;Televízió, Zuhanyzó;True
+128;Kétágyas;2;33000;Televízió, Minibár, Széf;True
+129;Kétágyas;2;33000;Televízió, Minibár, Széf;True
+130;Kétágyas;2;36000;Televízió, Minibár, Panoráma ablak;True
+131;Háromágyas;3;45000;Televízió, Minibár, Klíma, Erkély;True
+132;Háromágyas;3;45000;Televízió, Minibár, Klíma, Erkély;True
+133;Háromágyas;3;48000;Televízió, Minibár, Klíma, Jakuzzi;True
+134;Háromágyas;3;48000;Televízió, Minibár, Klíma, Jakuzzi;True
+135;Háromágyas;3;42000;Televízió, Minibár, Zuhanyzó;True
+136;Háromágyas;3;42000;Televízió, Minibár, Zuhanyzó;True
+137;Háromágyas;3;46000;Televízió, Minibár, Széf, Klíma;True
+138;Háromágyas;3;46000;Televízió, Minibár, Széf, Klíma;True
+139;Háromágyas;3;50000;Televízió, Minibár, Szauna, Klíma;True
+140;Háromágyas;3;45000;Televízió, Minibár, Klíma;True
+201;Családi;4;60000;Televízió, Minibár, Klíma, Konyhasarok;True
+202;Családi;4;60000;Televízió, Minibár, Klíma, Konyhasarok;True
+203;Családi;4;65000;Televízió, Minibár, Klíma, Jakuzzi, Erkély;True
+204;Családi;4;65000;Televízió, Minibár, Klíma, Jakuzzi, Erkély;True
+205;Családi;4;58000;Televízió, Minibár, Klíma;True
+206;Családi;4;58000;Televízió, Minibár, Klíma;True
+207;Családi;5;70000;Televízió, Minibár, Klíma, Két fürdőszoba;True
+208;Családi;5;70000;Televízió, Minibár, Klíma, Két fürdőszoba;True
+209;Családi;4;62000;Televízió, Minibár, Széf, Klíma;True
+210;Családi;4;62000;Televízió, Minibár, Széf, Klíma;True
+211;Lakosztály;2;80000;Luxus felszereltség, Jacuzzi, Szauna, Minibár;True
+212;Lakosztály;2;80000;Luxus felszereltség, Jacuzzi, Szauna, Minibár;True
+213;Lakosztály;4;95000;Luxus felszereltség, Panoráma, Jakuzzi, Konyha;True
+214;Lakosztály;4;95000;Luxus felszereltség, Panoráma, Jakuzzi, Konyha;True
+215;Lakosztály;3;85000;Luxus felszereltség, Szauna, Terasz;True
+301;Egyágyas;1;20000;Televízió, Minibár;True
+302;Egyágyas;1;20000;Televízió, Minibár;True
+303;Egyágyas;1;21000;Televízió, Minibár;True
+304;Egyágyas;1;21000;Televízió, Minibár;True
+305;Egyágyas;1;23000;Televízió, Minibár, Klíma;True
+306;Egyágyas;1;23000;Televízió, Minibár, Klíma;True
+307;Egyágyas;1;25000;Televízió, Minibár, Erkély;True
+308;Egyágyas;1;19000;Televízió, Zuhanyzó;True
+309;Egyágyas;1;19000;Televízió, Zuhanyzó;True
+310;Egyágyas;1;24000;Televízió, Széf, Minibár;True
+311;Kétágyas;2;31000;Televízió, Minibár, Klíma;True
+312;Kétágyas;2;31000;Televízió, Minibár, Klíma;True
+313;Kétágyas;2;34000;Televízió, Minibár, Erkély;True
+314;Kétágyas;2;34000;Televízió, Minibár, Erkély;True
+315;Kétágyas;2;37000;Televízió, Minibár, Jakuzzi;True
+316;Kétágyas;2;29000;Televízió, Zuhanyzó;True
+317;Kétágyas;2;29000;Televízió, Zuhanyzó;True
+318;Kétágyas;2;32000;Televízió, Minibár, Széf;True
+319;Kétágyas;2;32000;Televízió, Minibár, Széf;True
+320;Kétágyas;2;35000;Televízió, Minibár, Kilátás;True
+401;Kétágyas;2;33000;Televízió, Minibár, Klíma;True
+402;Kétágyas;2;33000;Televízió, Minibár, Klíma;True
+403;Kétágyas;2;36000;Televízió, Minibár, Erkély;True
+404;Kétágyas;2;36000;Televízió, Minibár, Erkély;True
+405;Kétágyas;2;39000;Televízió, Minibár, Jakuzzi;True
+406;Háromágyas;3;44000;Televízió, Minibár, Klíma;True
+407;Háromágyas;3;44000;Televízió, Minibár, Klíma;True
+408;Háromágyas;3;47000;Televízió, Minibár, Erkély;True
+409;Háromágyas;3;47000;Televízió, Minibár, Erkély;True
+410;Háromágyas;3;49000;Televízió, Minibár, Jakuzzi;True
+501;Családi;4;61000;Televízió, Minibár, Klíma, Konyha;True
+502;Családi;4;61000;Televízió, Minibár, Klíma, Konyha;True
+503;Családi;5;72000;Televízió, Minibár, Klíma, Terasz;True
+504;Családi;5;72000;Televízió, Minibár, Klíma, Terasz;True
+505;Lakosztály;4;90000;Luxus felszereltség, Szauna, Jakuzzi;True
+506;Lakosztály;4;90000;Luxus felszereltség, Szauna, Jakuzzi;True
+507;Lakosztály;6;110000;Elnöki lakosztály, teljes körű luxus;True
+601;Egyágyas;1;18000;Televízió (Inaktív szoba);False
+602;Kétágyas;2;28000;Televízió (Inaktív szoba);False
+603;Háromágyas;3;38000;Televízió (Inaktív szoba);False
+604;Családi;4;50000;Televízió (Inaktív szoba);False
+605;Lakosztály;2;70000;Televízió (Inaktív szoba);False

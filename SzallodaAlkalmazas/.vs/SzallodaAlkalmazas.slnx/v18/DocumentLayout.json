@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\KispalViktor\\Documents\\GitHub\\KV_GB_SzallodaAlkalmazas\\SzallodaAlkalmazas\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|c:\\users\\kispalviktor\\documents\\github\\kv_gb_szallodaalkalmazas\\szallodaalkalmazas\\szallodaalkalmazas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|solutionrelative:szallodaalkalmazas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\KispalViktor\\Documents\\GitHub\\KV_GB_SzallodaAlkalmazas\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\Form1.cs",
+              "RelativeDocumentMoniker": "SzallodaAlkalmazas\\Form1.cs",
+              "ToolTip": "C:\\Users\\KispalViktor\\Documents\\GitHub\\KV_GB_SzallodaAlkalmazas\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\Form1.cs",
+              "RelativeToolTip": "SzallodaAlkalmazas\\Form1.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-11T17:00:57.418Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

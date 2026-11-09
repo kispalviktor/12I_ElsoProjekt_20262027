@@ -1,0 +1,91 @@
+ALAPVETŐ KÖVETELMÉNYEK LISTÁJA
+
+A PROGRAM LEGALÁBB AZ ALÁBBI ADATOKAT KEZELJE:
+
+SZOBÁK:
+- szobaszám
+- szobatípus
+- férőhely
+- éjszakánkénti ár
+- felszereltség
+- aktív/inaktív állapot
+
+VENDÉGEK:
+- azonosító
+- név
+- telefonszám
+- e-mail cím
+
+FOGLALÁSOK:
+- foglalási azonosító
+- vendég
+- szoba
+- érkezés dátuma
+- távozás dátuma
+- vendégek száma
+- foglalás állapota
+- teljes ár
+
+VEZÉRLŐELEMEK:
+- Button
+- Label
+- TextBox
+- ComboBox
+- DateTimePicker
+- NumericUpDown
+- CheckBox
+- RadioButton
+- DataGridView
+- GroupBox
+- Panel
+
+FŐABLAK MENÜ/NAVIGÁCIÓS PONTJAI:
+
+1. SZOBÁK
+- új szoba felvétele
+- szobák listázása
+- szoba keresése
+- szoba adatainak módosítása
+- szoba törlése
+
+2. VENDÉGEK
+- új vendég rögzítése
+- vendég keresése
+- vendégek listázása
+- vendég adatainak módosítása
+- vendég törlése
+
+3. FOGLALÁSOK
+- új foglalás létrehozása
+- foglalás módosítása
+- foglalás törlése
+- foglalások listázása
+- foglalás azonosító alapján keresni
+
+3.5. ÁR KISZÁMÍTÁSA
+- A program automatikusan számítsa ki a foglalás. Az ár kiszámítását külön metódusban kell megvalósítani.
+
+  teljes ár = éjszakák száma × szoba éjszakánkénti ára
+    
+4. SZABAD SZOBÁK KERESÉSE
+- érkezés dátuma
+- távozás dátuma
+- vendégek száma
+
+5. STATISZTIKÁK
+- legalább 5 statisztika:
+ 1.  Hány foglalás történt?
+ 2.  Melyik szobát foglalták le a legtöbbször?
+ 3.  Mennyi volt a szálloda bevétele?
+ 4.  Hány vendég érkezett egy adott hónapban?
+ 5.  Melyik szobatípus volt a legnépszerűbb?
+ 6.  Átlagosan hány éjszakára foglalnak?
+ 7.  Mekkora volt a szobák kihasználtsága?
+
+
+
+A PROGRAM BEZÁRÁSAKOR AZ ADATOK NEM VESZHETNEK EL!
+Az adatokat legalább három különálló fájlban kell tárolni, például:
+- rooms.txt
+- guests.txt
+- bookings.txt

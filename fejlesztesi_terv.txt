@@ -1,0 +1,63 @@
+1. hét (2026.10.05.)
+- GitHub repository
+- a projekt
+- feladatmegosztás
+- alapvető követelménylista
+- osztálydiagram
+- fejlesztési terv
+
+2. hét (2026.10.12.)
+- Room osztály
+- Guest osztály
+- Booking osztály
+- alapvető adatszerkezetek
+- alapvető adatellenőrzések
+
+3. hét (2026.10.19.)
+- szobák felvétele
+- szobák listázása
+- szobák keresése
+- vendégek felvétele
+- vendégek keresése, módosítása, törlése
+
+4. hét (2026.11.02.)
+- foglalás létrehozása
+- foglalás módosítása
+- foglalás törlése
+- foglalások listázása
+- szabad szobák keresése
+- dátumkezelés
+
+5. hét (2026.11.09.)
+- CSV alapú adattárolás
+- adatok betöltése
+- adatok mentése
+- hibás vagy hiányzó fájl kezelése
+Ellenőrzési pont: a program újraindítása után az előzőleg rögzített adatoknak meg kell jelenniük.
+
+6. hét (2026.11.16.)
+- árkalkuláció
+- foglaltság számítása
+- bevétel számítása
+- legalább 5 statisztika
+
+7. hét (2026.11.23.)
+Legalább 15 tesztesetet kell készíteniük.
+A tesztek között szerepeljen például:
+- hibás adat
+- nem létező szoba
+- nem létező vendég
+- hibás dátum
+- távozás az érkezés előtt
+- foglalt szoba újbóli lefoglalása
+- férőhely túllépése
+- hiányzó adatfájl
+- hibás adatfájl
+
+8. hét (2026.11.30.)
+- a végleges program
+- dokumentáció
+- README.md fájl
+- tesztelési dokumentáció
+- GitHub repository végleges változata
+- a projekt bemutatója

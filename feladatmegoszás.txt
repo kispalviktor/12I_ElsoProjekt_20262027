@@ -1,0 +1,21 @@
+Kispál Viktor
+- Room osztály
+- szobakezelés
+- szabad szobák keresése
+- árkalkuláció
+- statisztikák egy része
+
+Gazdik Bálint
+- Guest osztály
+- Booking osztály
+- foglalások kezelése
+- foglalási ütközések vizsgálata
+- fájlkezelés
+
+Közös feladat
+- főmenü
+- rendszerintegráció
+- tesztelés
+- hibajavítás
+- dokumentáció
+- végső bemutató

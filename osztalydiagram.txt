@@ -1,0 +1,78 @@
++-------------------------------------------------------+
+|                         Room                          |
++-------------------------------------------------------+
+| - roomNumber : int                                    |
+| - roomType : string                                   |
+| - capacity : int                                      |
+| - pricePerNight : decimal                             |
+| - amenities : string                                  |
+| - isActive : bool                                     |
++-------------------------------------------------------+
+| + GetDetails() : string                               |
++-------------------------------------------------------+
+
+                           ^
+                           | (1 szoba hivatkozva)
+                           |
++-------------------------------------------------------+
+|                        Booking                        |
++-------------------------------------------------------+
+| - id : int                                            |
+| - guestId : int                                       |
+| - roomNumber : int                                    |
+| - checkIn : DateTime                                  |
+| - checkOut : DateTime                                 |
+| - guestCount : int                                    |
+| - status : string                                     |
+| - totalPrice : decimal                                |
++-------------------------------------------------------+
+| + GetNights() : int                                   |
+| + OverlapsWith(start: DateTime, end: DateTime) : bool |
++-------------------------------------------------------+
+
+                           |
+                           | (1 vendég hivatkozva)
+                           v
+
++-------------------------------------------------------+
+|                         Guest                         |
++-------------------------------------------------------+
+| - id : int                                            |
+| - name : string                                       |
+| - phone : string                                      |
+| - email : string                                      |
++-------------------------------------------------------+
+| + GetDetails() : string                               |
++-------------------------------------------------------+
+
+
++-------------------------------------------------------+
+|                         Hotel                         |
++-------------------------------------------------------+
+| - rooms : List<Room>                                  |
+| - guests : List<Guest>                                |
+| - bookings : List<Booking>                            |
++-------------------------------------------------------+
+| + AddRoom(room : Room) : void                         |
+| + AddGuest(guest : Guest) : void                      |
+| + AddBooking(booking : Booking) : bool                |
+| + IsRoomAvailable(roomNum: int, start, end) : bool    |
+| + GetAvailableRooms(start, end, capacity) : List<Room>|
+| + CalculatePrice(room: Room, nights: int) : decimal   |
+| + GetStatistics() : string                            |
++-------------------------------------------------------+
+
+                           |
+                           | (használja)
+                           v
+
++-------------------------------------------------------+
+|                      FileManager                      |
++-------------------------------------------------------+
+| - roomsFilePath : string                              |
+| - guestsFilePath : string                             |
+| - bookingsFilePath : string                           |
++-------------------------------------------------------+
+| + LoadAllData() : void                                |
+| + SaveAllData() : void                                |
++-------------------------------------------------------+
