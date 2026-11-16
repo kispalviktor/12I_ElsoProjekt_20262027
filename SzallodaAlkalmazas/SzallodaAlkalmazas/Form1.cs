@@ -44,18 +44,21 @@ namespace SzallodaAlkalmazas
             Button foglalasokGomb = MenuGomb("Foglalások", 420, 65);
             Button szabadSzobakGomb = MenuGomb("Szabad szobák", 20, 115);
             Button mentesGomb = MenuGomb("Adatok mentése", 220, 115);
+            Button statisztikakGomb = MenuGomb("Statisztikák", 420, 115);
 
             szobakGomb.Click += SzobakGomb_Click;
             vendegekGomb.Click += VendegekGomb_Click;
             foglalasokGomb.Click += FoglalasokGomb_Click;
             szabadSzobakGomb.Click += SzabadSzobakGomb_Click;
             mentesGomb.Click += MentesGomb_Click;
+            statisztikakGomb.Click += StatisztikakGomb_Click;
 
             menuPanel.Controls.Add(szobakGomb);
             menuPanel.Controls.Add(vendegekGomb);
             menuPanel.Controls.Add(foglalasokGomb);
             menuPanel.Controls.Add(szabadSzobakGomb);
             menuPanel.Controls.Add(mentesGomb);
+            menuPanel.Controls.Add(statisztikakGomb);
 
             // ---- Alsó rész: aktuális tartalom ----
             Panel tartalomPanel = new Panel();
@@ -221,6 +224,12 @@ namespace SzallodaAlkalmazas
             SzabadSzobakForm ablak = new SzabadSzobakForm(hotel);
             ablak.ShowDialog();
             OsszesitesFrissitese();
+        }
+
+        private void StatisztikakGomb_Click(object sender, EventArgs e)
+        {
+            StatisztikakForm ablak = new StatisztikakForm(hotel);
+            ablak.ShowDialog();
         }
     }
 }
