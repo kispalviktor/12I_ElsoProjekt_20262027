@@ -3,9 +3,6 @@ using System.Collections.Generic;
 
 namespace SzallodaAlkalmazas
 {
-    // Szobákhoz kapcsolódó statisztikák: foglaltság, legtöbbet foglalt szoba,
-    // legnépszerűbb szobatípus.
-    // A lemondott foglalásokat egyik számításban sem vesszük figyelembe.
     public class RoomStatistics
     {
         private Hotel hotel;
@@ -15,10 +12,6 @@ namespace SzallodaAlkalmazas
             this.hotel = hotel;
         }
 
-        // ===================== FOGLALTSÁG =====================
-
-        // Foglaltság százalékban egy időszakra (a "to" napja már nem számít bele).
-        // Foglaltság = foglalt éjszakák száma / (aktív szobák száma × éjszakák száma) × 100
         public double GetOccupancyRate(DateTime from, DateTime to)
         {
             int napok = (to.Date - from.Date).Days;
@@ -41,8 +34,6 @@ namespace SzallodaAlkalmazas
             return (double)foglaltEjszakak / osszesEjszaka * 100;
         }
 
-        // Hány szoba-éjszaka foglalt egy időszakban.
-        // Ha egy foglalás csak részben esik az időszakba, csak azt a részt számoljuk.
         public int GetBookedNights(DateTime from, DateTime to)
         {
             int osszesen = 0;
@@ -52,7 +43,6 @@ namespace SzallodaAlkalmazas
                 if (booking.Status == "Lemondva")
                     continue;
 
-                // A foglalás és az időszak közös része
                 DateTime kezdet = booking.CheckIn;
                 if (from.Date > kezdet)
                     kezdet = from.Date;
@@ -68,7 +58,6 @@ namespace SzallodaAlkalmazas
             return osszesen;
         }
 
-        // Hány szoba foglalt egy adott éjszakára (pl. ma este)
         public int GetOccupiedRoomCount(DateTime day)
         {
             int darab = 0;
@@ -85,9 +74,6 @@ namespace SzallodaAlkalmazas
             return darab;
         }
 
-        // ===================== LEGTÖBBSZÖR FOGLALT SZOBA =====================
-
-        // Hányszor foglalták le az adott szobát
         public int CountBookingsOfRoom(int roomNumber)
         {
             int darab = 0;
@@ -101,8 +87,6 @@ namespace SzallodaAlkalmazas
             return darab;
         }
 
-        // A legtöbbször lefoglalt szoba száma. Ha nincs foglalás, 0-t ad vissza.
-        // Egyenlőség esetén a listában előbb szereplő szoba nyer.
         public int GetMostBookedRoomNumber()
         {
             int legjobbSzoba = 0;
@@ -122,9 +106,6 @@ namespace SzallodaAlkalmazas
             return legjobbSzoba;
         }
 
-        // ===================== LEGNÉPSZERŰBB SZOBATÍPUS =====================
-
-        // Hány foglalás volt az adott típusú szobákra
         public int CountBookingsOfRoomType(string roomType)
         {
             int darab = 0;
@@ -142,10 +123,8 @@ namespace SzallodaAlkalmazas
             return darab;
         }
 
-        // A legtöbbet foglalt szobatípus neve. Ha nincs foglalás, üres szöveget ad vissza.
         public string GetMostPopularRoomType()
         {
-            // Először összegyűjtjük, milyen szobatípusok vannak (mindegyiket egyszer)
             List<string> tipusok = new List<string>();
             foreach (Room room in hotel.Rooms)
             {

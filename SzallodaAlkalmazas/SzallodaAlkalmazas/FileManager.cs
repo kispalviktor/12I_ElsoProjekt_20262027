@@ -6,9 +6,6 @@ using System.Text;
 
 namespace SzallodaAlkalmazas
 {
-    // A szállodai adatok mentése és betöltése CSV fájlokba.
-    // Elválasztó karakter: pontosvessző (;), mert a felszereltségben vessző is lehet.
-    // Mindhárom fájl első sora egy fejléc.
     public class FileManager
     {
         private const string RoomsHeader =
@@ -26,7 +23,6 @@ namespace SzallodaAlkalmazas
 
         public FileManager(string folder)
         {
-            // Ha még nincs adatmappa, létrehozzuk
             if (!Directory.Exists(folder))
                 Directory.CreateDirectory(folder);
 
@@ -35,11 +31,6 @@ namespace SzallodaAlkalmazas
             bookingsFilePath = Path.Combine(folder, "bookings.csv");
         }
 
-        // ===================== BETÖLTÉS =====================
-
-        // Betölti mindhárom fájlt a hotel listáiba.
-        // Visszaadja a betöltés közben talált problémák listáját (üres, ha minden rendben volt).
-        // Sorrend fontos: a foglalásokhoz már kellenek a szobák és a vendégek.
         public List<string> LoadAllData(Hotel hotel)
         {
             List<string> messages = new List<string>();
@@ -150,8 +141,6 @@ namespace SzallodaAlkalmazas
                     string status = data[6];
                     decimal totalPrice = decimal.Parse(data[7], CultureInfo.InvariantCulture);
 
-                    // Az AddBooking ellenőrzi, hogy létezik-e a vendég és a szoba,
-                    // és hogy nem ütközik-e egy már betöltött foglalással.
                     hotel.AddBooking(new Booking(id, guestId, roomNumber,
                         checkIn, checkOut, guestCount, status, totalPrice));
                 }
@@ -166,7 +155,6 @@ namespace SzallodaAlkalmazas
                 MakeBackup(bookingsFilePath, messages);
         }
 
-        // Beolvassa a fájl sorait. Ha a fájl nem létezik vagy nem olvasható, null-t ad vissza.
         private string[] ReadFile(string path, List<string> messages)
         {
             string fileName = Path.GetFileName(path);
@@ -185,13 +173,11 @@ namespace SzallodaAlkalmazas
             catch (Exception ex)
             {
                 messages.Add(fileName + " nem olvasható: " + ex.Message);
-                // Mentéskor felülíródna, ezért megpróbálunk róla másolatot készíteni
                 MakeBackup(path, messages);
                 return null;
             }
         }
 
-        // Ha az első sor a fejléc, akkor az 1. sortól kezdjük az olvasást, különben a 0.-tól.
         private int FirstDataLine(string[] lines, string header)
         {
             if (lines.Length > 0 && lines[0].Trim() == header)
@@ -200,7 +186,6 @@ namespace SzallodaAlkalmazas
             return 0;
         }
 
-        // Egy sor szétvágása, és annak ellenőrzése, hogy annyi adat van-e benne, amennyi kell.
         private string[] SplitLine(string line, int columnCount)
         {
             string[] data = line.Split(';');
@@ -215,7 +200,6 @@ namespace SzallodaAlkalmazas
             return data;
         }
 
-        // A hibás fájlról mentést készítünk, hogy a kihagyott sorok ne vesszenek el végleg.
         private void MakeBackup(string path, List<string> messages)
         {
             string backupPath = path + ".hibas.bak";
@@ -231,9 +215,6 @@ namespace SzallodaAlkalmazas
             }
         }
 
-        // ===================== MENTÉS =====================
-
-        // Mindhárom fájl mentése. Hiba esetén kivételt dob, ezt a hívó kezeli.
         public void SaveAllData(Hotel hotel)
         {
             SaveRooms(hotel);
@@ -295,8 +276,6 @@ namespace SzallodaAlkalmazas
             WriteFile(bookingsFilePath, lines);
         }
 
-        // Először egy ideiglenes fájlba írunk, és csak ha ez sikerült, akkor írjuk felül
-        // az igazi fájlt. Így egy félbeszakadt mentés nem rontja el a régi adatokat.
         private void WriteFile(string path, List<string> lines)
         {
             string tempPath = path + ".tmp";
@@ -306,7 +285,6 @@ namespace SzallodaAlkalmazas
             File.Delete(tempPath);
         }
 
-        // A pontosvessző és a sortörés elrontaná a CSV-t, ezért kicseréljük őket.
         private string Clean(string text)
         {
             if (text == null)

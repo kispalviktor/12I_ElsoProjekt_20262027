@@ -6,8 +6,6 @@ using System.Windows.Forms;
 
 namespace SzallodaAlkalmazas
 {
-    // Főablak: innen lehet megnyitni a többi ablakot.
-    // Induláskor betölti az adatokat, bezáráskor elmenti őket.
     public partial class Form1 : Form
     {
         private Hotel hotel = new Hotel();
@@ -26,7 +24,6 @@ namespace SzallodaAlkalmazas
             FormBorderStyle = FormBorderStyle.FixedSingle;
             MaximizeBox = false;
 
-            // ---- Felső rész: cím és menügombok ----
             Panel menuPanel = new Panel();
             menuPanel.Location = new Point(0, 0);
             menuPanel.Size = new Size(820, 170);
@@ -60,7 +57,6 @@ namespace SzallodaAlkalmazas
             menuPanel.Controls.Add(mentesGomb);
             menuPanel.Controls.Add(statisztikakGomb);
 
-            // ---- Alsó rész: aktuális tartalom ----
             Panel tartalomPanel = new Panel();
             tartalomPanel.Location = new Point(0, 170);
             tartalomPanel.Size = new Size(820, 350);
@@ -91,7 +87,6 @@ namespace SzallodaAlkalmazas
             FormClosing += Form1_FormClosing;
         }
 
-        // Egyforma menügombok készítése
         private Button MenuGomb(string szoveg, int x, int y)
         {
             Button gomb = new Button();
@@ -103,11 +98,8 @@ namespace SzallodaAlkalmazas
             return gomb;
         }
 
-        // ===================== BETÖLTÉS INDULÁSKOR =====================
-
         private void Form1_Load(object sender, EventArgs e)
         {
-            // Az adatfájlok az exe mellett, az "Adatok" mappában vannak
             string adatMappa = Path.Combine(Application.StartupPath, "Adatok");
 
             List<string> uzenetek;
@@ -152,8 +144,6 @@ namespace SzallodaAlkalmazas
                 "     Foglalások: " + hotel.Bookings.Count;
         }
 
-        // ===================== MENTÉS =====================
-
         private bool AdatokMentese()
         {
             if (fileManager == null)
@@ -182,7 +172,6 @@ namespace SzallodaAlkalmazas
             }
         }
 
-        // Bezáráskor mentünk. Ha nem sikerül, megkérdezzük, hogy biztosan bezárja-e.
         private void Form1_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (!AdatokMentese())
@@ -195,8 +184,6 @@ namespace SzallodaAlkalmazas
                     e.Cancel = true;
             }
         }
-
-        // ===================== ABLAKOK MEGNYITÁSA =====================
 
         private void SzobakGomb_Click(object sender, EventArgs e)
         {

@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|c:\\users\\kispalviktor\\documents\\github\\12i_elsoprojekt_20262027\\szallodaalkalmazas\\szallodaalkalmazas\\roomstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|solutionrelative:szallodaalkalmazas\\roomstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|c:\\users\\kispalviktor\\documents\\github\\12i_elsoprojekt_20262027\\szallodaalkalmazas\\szallodaalkalmazas\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|solutionrelative:szallodaalkalmazas\\hotel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|c:\\users\\kispalviktor\\documents\\github\\12i_elsoprojekt_20262027\\szallodaalkalmazas\\szallodaalkalmazas\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|solutionrelative:szallodaalkalmazas\\filemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|c:\\users\\kispalviktor\\documents\\github\\12i_elsoprojekt_20262027\\szallodaalkalmazas\\szallodaalkalmazas\\bookingstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|solutionrelative:szallodaalkalmazas\\bookingstatistics.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|c:\\users\\kispalviktor\\documents\\github\\12i_elsoprojekt_20262027\\szallodaalkalmazas\\szallodaalkalmazas\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|solutionrelative:szallodaalkalmazas\\booking.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|c:\\users\\kispalviktor\\documents\\github\\12i_elsoprojekt_20262027\\szallodaalkalmazas\\szallodaalkalmazas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{E00F1A51-5F70-4494-AE9D-056A36B03508}|SzallodaAlkalmazas\\SzallodaAlkalmazas.csproj|solutionrelative:szallodaalkalmazas\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -19,12 +39,77 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "RoomStatistics.cs",
+              "DocumentMoniker": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\RoomStatistics.cs",
+              "RelativeDocumentMoniker": "SzallodaAlkalmazas\\RoomStatistics.cs",
+              "ToolTip": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\RoomStatistics.cs*",
+              "RelativeToolTip": "SzallodaAlkalmazas\\RoomStatistics.cs*",
+              "ViewState": "AgIAADIAAAAAAAAAAAAwwEUAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T08:40:12.653Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Hotel.cs",
+              "DocumentMoniker": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\Hotel.cs",
+              "RelativeDocumentMoniker": "SzallodaAlkalmazas\\Hotel.cs",
+              "ToolTip": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\Hotel.cs*",
+              "RelativeToolTip": "SzallodaAlkalmazas\\Hotel.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAGMAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T08:39:23.915Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "FileManager.cs",
+              "DocumentMoniker": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\FileManager.cs",
+              "RelativeDocumentMoniker": "SzallodaAlkalmazas\\FileManager.cs",
+              "ToolTip": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\FileManager.cs*",
+              "RelativeToolTip": "SzallodaAlkalmazas\\FileManager.cs*",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAQwB4BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T08:38:34.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "BookingStatistics.cs",
+              "DocumentMoniker": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\BookingStatistics.cs",
+              "RelativeDocumentMoniker": "SzallodaAlkalmazas\\BookingStatistics.cs",
+              "ToolTip": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\BookingStatistics.cs*",
+              "RelativeToolTip": "SzallodaAlkalmazas\\BookingStatistics.cs*",
+              "ViewState": "AgIAADEAAAAAAAAAAAAcwDoAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T08:38:19.027Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Booking.cs",
+              "DocumentMoniker": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\Booking.cs",
+              "RelativeDocumentMoniker": "SzallodaAlkalmazas\\Booking.cs",
+              "ToolTip": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\Booking.cs*",
+              "RelativeToolTip": "SzallodaAlkalmazas\\Booking.cs*",
+              "ViewState": "AgIAADgAAAAAAAAAAAAswDsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-11-16T08:35:54.091Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\Form1.cs",
               "RelativeDocumentMoniker": "SzallodaAlkalmazas\\Form1.cs",
-              "ToolTip": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\Form1.cs",
-              "RelativeToolTip": "SzallodaAlkalmazas\\Form1.cs",
-              "ViewState": "AgIAANMAAAAAAAAAAAAqwOYAAAA5AAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\KispalViktor\\Documents\\GitHub\\12I_ElsoProjekt_20262027\\SzallodaAlkalmazas\\SzallodaAlkalmazas\\Form1.cs*",
+              "RelativeToolTip": "SzallodaAlkalmazas\\Form1.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-10-11T17:00:57.418Z",
               "EditorCaption": ""

@@ -9,8 +9,6 @@ namespace SzallodaAlkalmazas
         public List<Guest> Guests { get; } = new List<Guest>();
         public List<Booking> Bookings { get; } = new List<Booking>();
 
-        // ===================== KERESŐ METÓDUSOK =====================
-
         public Room FindRoom(int roomNumber)
         {
             foreach (Room room in Rooms)
@@ -41,8 +39,6 @@ namespace SzallodaAlkalmazas
             return null;
         }
 
-        // ===================== SZOBÁK =====================
-
         public void AddRoom(Room room)
         {
             if (room == null)
@@ -55,7 +51,6 @@ namespace SzallodaAlkalmazas
             Rooms.Add(room);
         }
 
-        // A régi szoba helyére az új adatokkal létrehozott szoba kerül.
         public void UpdateRoom(int oldRoomNumber, Room newRoom)
         {
             if (newRoom == null)
@@ -104,8 +99,6 @@ namespace SzallodaAlkalmazas
             return false;
         }
 
-        // ===================== VENDÉGEK =====================
-
         public void AddGuest(Guest guest)
         {
             if (guest == null)
@@ -118,7 +111,6 @@ namespace SzallodaAlkalmazas
             Guests.Add(guest);
         }
 
-        // A vendég azonosítója nem változik, csak a többi adata.
         public void UpdateGuest(Guest newGuest)
         {
             if (newGuest == null)
@@ -147,8 +139,6 @@ namespace SzallodaAlkalmazas
 
             Guests.Remove(guest);
         }
-
-        // A következő szabad vendégazonosító (a legnagyobb + 1)
         public int GetNextGuestId()
         {
             int max = 0;
@@ -160,7 +150,6 @@ namespace SzallodaAlkalmazas
             return max + 1;
         }
 
-        // ===================== FOGLALÁSOK =====================
 
         public int GetNextBookingId()
         {
@@ -179,9 +168,6 @@ namespace SzallodaAlkalmazas
             return IsRoomAvailable(roomNumber, checkIn, checkOut, 0);
         }
 
-        // Ütközésvizsgálat. Az ignoredBookingId azonosítójú foglalást nem nézzük
-        // (módosításnál a foglalás saját magával ne ütközzön).
-        // A lemondott foglalások nem foglalják a szobát.
         public bool IsRoomAvailable(int roomNumber,
             DateTime checkIn, DateTime checkOut, int ignoredBookingId)
         {
@@ -249,8 +235,6 @@ namespace SzallodaAlkalmazas
             Bookings.Remove(booking);
         }
 
-        // A foglalás ellenőrzése: létezik-e a vendég és a szoba,
-        // elfér-e a vendégszám, és szabad-e a szoba az adott időszakban.
         private void CheckBooking(Booking booking, int ignoredBookingId)
         {
             if (FindGuest(booking.GuestId) == null)
@@ -267,16 +251,13 @@ namespace SzallodaAlkalmazas
                 throw new InvalidOperationException(
                     "Túl sok vendég a szoba férőhelyéhez képest.");
 
-            // Lemondott foglalásnál nem kell ütközést vizsgálni
             if (booking.Status == "Lemondva")
                 return;
 
-            // Inaktív szobára új (aktív) foglalás nem vehető fel
             if (booking.Status == "Aktív" && !room.IsActive)
                 throw new InvalidOperationException(
                     "A szoba inaktív, nem foglalható.");
 
-            // Ütközésvizsgálat: van-e másik foglalás, ami átfedi ezt az időszakot
             foreach (Booking other in Bookings)
             {
                 if (other.Id == ignoredBookingId)

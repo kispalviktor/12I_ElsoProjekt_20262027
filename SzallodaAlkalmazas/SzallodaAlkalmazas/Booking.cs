@@ -13,8 +13,6 @@ namespace SzallodaAlkalmazas
         public string Status { get; private set; }
         public decimal TotalPrice { get; private set; }
 
-        // A teljes árat kívülről kapja meg (a CalculatePrice metódussal számoljuk ki),
-        // így fájlból betöltéskor a mentett ár marad meg.
         public Booking(int id, int guestId, int roomNumber,
             DateTime checkIn, DateTime checkOut, int guestCount,
             string status, decimal totalPrice)
@@ -45,7 +43,6 @@ namespace SzallodaAlkalmazas
             TotalPrice = totalPrice;
         }
 
-        // Ár kiszámítása: éjszakák száma × éjszakánkénti ár
         public static decimal CalculatePrice(
             DateTime checkIn, DateTime checkOut, decimal pricePerNight)
         {
@@ -61,8 +58,6 @@ namespace SzallodaAlkalmazas
             return (CheckOut - CheckIn).Days;
         }
 
-        // Két időszak akkor fedi egymást, ha az egyik a másik vége előtt kezdődik
-        // és a másik kezdete után ér véget. A távozás napján már jöhet az új vendég.
         public bool OverlapsWith(DateTime start, DateTime end)
         {
             return start.Date < CheckOut && end.Date > CheckIn;
